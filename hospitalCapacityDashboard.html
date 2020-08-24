@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Hospital Capacity Dashboard</title>
+    <link rel="stylesheet" href="./StyleSheet1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="/.hospitalCapacityDashboard.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="graphTitle">Hospital Capacity Dashboard</h1>
+    </header>
+    <div class="dashboardGraphs" id="dashboard">
+        <div class="covidEDGraph"<h2>COVID + Seen in ED</h2>
+            <canvas id="covidED" width="400" height="400"></canvas>
+        </div>
+        <div class="covidAdmitGraph"><h2>COVID + Admissions</h2>
+            <canvas id="covidAdmit" width="400" height="400"></canvas>
+        </div>
+        <div class="covidInptGraph"><h2>COVID + Inpatients</h2>
+            <canvas id="covidInpt" width="400" height="400"></canvas>
+        </div>
+        <div class="lineGraph" ><h2>Covid Line graph</h2>
+            <canvas id="lineData" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
