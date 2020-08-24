@@ -7,26 +7,43 @@
     <title>Hospital Capacity Dashboard</title>
     <link rel="stylesheet" href="./StyleSheet1.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="/.hospitalCapacityDashboard.js"></script>
+    <script src="./hospitalCapacityDashboard.js"></script>
 </head>
 <body>
     <header>
         <h1 class="graphTitle">Hospital Capacity Dashboard</h1>
     </header>
     <div class="dashboardGraphs" id="dashboard">
-        <div class="covidEDGraph"<h2>COVID + Seen in ED</h2>
-            <canvas id="covidED" width="400" height="400"></canvas>
-        </div>
-        <div class="covidAdmitGraph"><h2>COVID + Admissions</h2>
-            <canvas id="covidAdmit" width="400" height="400"></canvas>
-        </div>
-        <div class="covidInptGraph"><h2>COVID + Inpatients</h2>
-            <canvas id="covidInpt" width="400" height="400"></canvas>
-        </div>
-        <div class="lineGraph" ><h2>Covid Line graph</h2>
-            <canvas id="lineData" width="400" height="400"></canvas>
-        </div>
+        <section class="covidEDGraph" id="covidED">
+            <h2>COVID + Seen in ED</h2>
+            <div style="width: 400px; height: 400px">
+                <canvas id="covidEDGraph"></canvas>
+            </div>
+            
+        </section>
+        <section class="covidAdmitGraph" id="covidAdmit">
+            <div style="width: 400px; height: 400px">
+                <h2>COVID + Admissions</h2>
+                <canvas id="covidAdmitGraph"></canvas>
+            </div>
+            
+        </section>
+        <section class="covidInptGraph" id="covidInpt">
+            <h2>COVID + Inpatients</h2>
+            <div style="width: 400px; height: 400px">
+                <canvas id="covidInptGraph"></canvas>
+            </div>
+            
+        </section>
+        <section class="lineGraph" id="lineData">
+            <h2>COVID Line graph</h2>
+            <div style="width: 400px; height: 400px">
+                <canvas id="lineGraph"></canvas>
+            </div>
+            
+        </section>
     </div>
+
 
 </body>
 </html>
